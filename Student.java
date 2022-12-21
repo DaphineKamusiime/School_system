@@ -1,33 +1,42 @@
-public class Student{
-    static void student(String name, int age,String course, int year, String residence,int time_spent){
-        
-        System.out.print("NAME: ");
-        System.out.print(name);
+class Student{
+    String name;
+    int age;
+    int yearofentry;
+    String course;
+    String residenceStatus;
 
-        System.out.print("       AGE: ");
-        System.out.print(age);
-
-        System.out.print("    COURSE: ");
-        System.out.print(course);
-
-        System.out.print("   YEAR: ");
-        System.out.print(year);
-
-        System.out.print("   RESIDENCE: ");
-        System.out.println(residence);
-
-        System.out.print("   TIME: ");
-        System.out.println(time_spent);
+    public String getname(){
+        return name;
     }
-/*
-    void years (){
-        System.out.print("DURATION == ");
-        System.out.println();
-        System.out.println("Years");
-     
-
-    public void time_spent() {
-    }*/
-
+    public void setName(String newname){
+        this.name= newname;
     }
- 
+
+    public int age(){
+        return age;
+    }
+    public void setage(String newage){
+        this.name= newage;
+    }
+
+    public int yearofentry (){
+        return yearofentry;
+    }
+    public void setyearofentry(String newyearofentry){
+        this.name= newyearofentry;
+    }
+
+    public String getcourse(){
+        return course;
+    }
+    public void setcourse(String newcourse){
+        this.name= newcourse;
+    }
+    
+    public String getresidenceStatus(){
+        return residenceStatus;
+    }
+    public void setresidenceStatus(String newresidenceStatus){
+        this.name= newresidenceStatus;
+    }
+}
