@@ -3,12 +3,7 @@ public class Main {
       
     public static void main(String[] args){
         
-/* 
- *   VipCustomer myStudent= new VipCustomer();
-        System.out.println(myStudent.emailAddress);
-        System.out.println(myStudent.creditLimit);
-        System.out.println(myStudent.name);
-*/
+
     
     Scanner myScanner=new Scanner(System.in);
    
@@ -22,12 +17,12 @@ public class Main {
     String name= myScanner.nextLine();
     int age= myScanner.nextInt();
     myScanner.nextLine();
-    int year= myScanner.nextInt();
+    int yearofentry= myScanner.nextInt();
     myScanner.nextLine();
     String course= myScanner.nextLine();
     String residence= myScanner.nextLine();
     myScanner.nextLine();
-    Student myStudent = new Student(myScanner.nextLine(), myScanner.nextInt(), myScanner.nextInt(), myScanner.nextLine(), myScanner.nextLine());
+    Student myStudent = new Student(name, age, yearofentry, course,residence );
     
     System.out.println(myStudent.name);
     System.out.println(myStudent.age);
