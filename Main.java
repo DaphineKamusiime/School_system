@@ -3,49 +3,36 @@ public class Main {
       
     public static void main(String[] args){
         
-        System.out.println("Enter name");
+/* 
+ *   VipCustomer myStudent= new VipCustomer();
+        System.out.println(myStudent.emailAddress);
+        System.out.println(myStudent.creditLimit);
+        System.out.println(myStudent.name);
+*/
+    
+    Scanner myScanner=new Scanner(System.in);
+   
+    System.out.println("Enter name");
+    System.out.println("Enter age");
+    System.out.println("Enter year of entry");
+    System.out.println("Enter course");
+    System.out.println("Enter residence_status");
+   
 
-        System.out.println("Enter age");
-       
-        System.out.println("Enter year of entry");
-
-        System.out.println("Enter course");
-
-        System.out.println("Enter residence_status");
-        
-        System.out.println("Enter time spent");
-        
-        Scanner myobj=new Scanner(System.in);
-
-        String name=myobj.nextLine();
-
-        int age=myobj.nextInt();
-
-        myobj.nextLine();
-
-        int year=myobj.nextInt();
-
-        myobj.nextLine();
-
-        String course=myobj.nextLine();
-
-        String residence=myobj.nextLine();
-        
-        int time_spent=myobj.nextInt();
-        
-        myobj.nextLine();
-
-        System.out.print("NAME: " + name);
-
-        System.out.print("       AGE: "+ age );
-
-        System.out.print("   YEAR: " + year);
-        
-        System.out.print("    COURSE: " + course);
-      
-        System.out.print("   RESIDENCE: " + residence);
-       
-        System.out.print("   TIME: " + time_spent);
-           
+    String name= myScanner.nextLine();
+    int age= myScanner.nextInt();
+    myScanner.nextLine();
+    int year= myScanner.nextInt();
+    myScanner.nextLine();
+    String course= myScanner.nextLine();
+    String residence= myScanner.nextLine();
+    myScanner.nextLine();
+    Student myStudent = new Student(myScanner.nextLine(), myScanner.nextInt(), myScanner.nextInt(), myScanner.nextLine(), myScanner.nextLine());
+    
+    System.out.println(myStudent.name);
+    System.out.println(myStudent.age);
+    System.out.println(myStudent.yearofentry);
+    System.out.println(myStudent.course);
+    System.out.println(myStudent.residenceStatus);
     }
 }
